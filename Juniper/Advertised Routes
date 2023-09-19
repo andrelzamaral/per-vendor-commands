@@ -1,0 +1,2 @@
+#Este comando mostra o resultado de uma rota DEPOIS dela ter passado pelos filtros das policies de exportação.
+show route advertise-protocol bgp 10.100.10.1
