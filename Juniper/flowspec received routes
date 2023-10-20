@@ -1,0 +1,26 @@
+show route table inetflow.0 extensive
+#Mostra as rotas recebidas via flowspec com o traffic matching e a action para cada prefixo/IP recebido.
+
+inetflow.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
+203.0.113.1,*,proto=17,dstport=53/term:1 (1 entry, 1 announced)
+TSI:
+KRT in dfwd;
+Action(s): discard,count
+Page 0 idx 0, (group SP type External) Type 1 val 0x966ed2c (adv_entry)
+ Advertised metrics:
+ Nexthop: Self
+ AS path: [64511] I
+ Communities: traffic-rate:0:0
+Path 203.0.113.1,*,proto=17,dstport=53 Vector len 4. Val: 0
+ *Flow Preference: 5
+ Next hop type: Fictitious
+ Address: 0x9358c04
+ Next-hop reference count: 1
+ State: <Active>
+ Local AS: 64511
+ Age: 3:22:30
+ Validation State: unverified
+ Task: RT Flow
+ Announcement bits (2): 0-Flow 1-BGP_RT_Background
+ AS path: I
+ Communities: traffic-rate:0:0
